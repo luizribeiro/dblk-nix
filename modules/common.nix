@@ -29,6 +29,6 @@ in
     environment.systemPackages = [ cfg.package ];
     # dblk-rustc passes straight through to rustc when no daemon is
     # listening, so users without one still build normally.
-    environment.variables.CARGO_BUILD_RUSTC_WRAPPER = "${cfg.package}/bin/dblk-rustc";
+    environment.variables.CARGO_BUILD_RUSTC_WRAPPER = "${cfg.package}/bin/dblk-rustc-wrapper";
   };
 }
